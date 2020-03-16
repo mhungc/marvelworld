@@ -3,9 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarvelWorld", "MarvelWorld\MarvelWorld.csproj", "{1B470F85-7F85-4B98-A0B5-AA358C9B1395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarvelWorld.Api", "MarvelWorld.Api\MarvelWorld.Api.csproj", "{1B470F85-7F85-4B98-A0B5-AA358C9B1395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelWorld.Tests", "MarvelWorld.Tests\MarvelWorld.Tests.csproj", "{1D57A7DA-54AA-4BEA-A24D-7FA865930EC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarvelWorld.Tests", "MarvelWorld.Tests\MarvelWorld.Tests.csproj", "{1D57A7DA-54AA-4BEA-A24D-7FA865930EC9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B470F85-7F85-4B98-A0B5-AA358C9B1395} = {1B470F85-7F85-4B98-A0B5-AA358C9B1395}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarvelWorld.Domain", "MarvelWorld.Domain\MarvelWorld.Domain.csproj", "{733A8D56-97ED-4E30-8856-62798C739B7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelWorld.Infrastructure", "MarvelWorld.Infrastructure\MarvelWorld.Infrastructure.csproj", "{55A07370-260A-4300-80EC-029D442AAA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelWorld.Application", "MarvelWorld.Application\MarvelWorld.Application.csproj", "{A18B8622-26A8-4CDE-86C0-831F445BC154}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,18 @@ Global
 		{1D57A7DA-54AA-4BEA-A24D-7FA865930EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D57A7DA-54AA-4BEA-A24D-7FA865930EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D57A7DA-54AA-4BEA-A24D-7FA865930EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733A8D56-97ED-4E30-8856-62798C739B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733A8D56-97ED-4E30-8856-62798C739B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733A8D56-97ED-4E30-8856-62798C739B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733A8D56-97ED-4E30-8856-62798C739B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A07370-260A-4300-80EC-029D442AAA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A07370-260A-4300-80EC-029D442AAA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A07370-260A-4300-80EC-029D442AAA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A07370-260A-4300-80EC-029D442AAA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18B8622-26A8-4CDE-86C0-831F445BC154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18B8622-26A8-4CDE-86C0-831F445BC154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18B8622-26A8-4CDE-86C0-831F445BC154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18B8622-26A8-4CDE-86C0-831F445BC154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
